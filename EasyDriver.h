@@ -4,6 +4,8 @@
  * Copyright Derek Molloy, School of Electronic Engineering, Dublin City University
  * www.eeng.dcu.ie/~molloyd/
  *
+ * YouTube Channel: http://www.youtube.com/derekmolloydcu/
+ *
  * Redistribution and use in source and binary forms, with or without modification,
  * are permitted provided that the following conditions are met:
  * 1. Redistributions of source code must retain the above copyright
@@ -40,16 +42,16 @@ class EasyDriver {
 	private:
 		// The GPIO pins MS1, MS2 (Microstepping options), STEP (The low->high step)
 		// SLP (Sleep - active low) and DIR (Direction)
-		int gpio_MS1, gpio_MS2, gpio_STEP, gpio_SLP, gpio_DIR;
-		unsigned int uSecDelay;
-		bool clockwise;
-		int delayFactor;  // keep constant rpm even with microstepping
+		int 			gpio_MS1, gpio_MS2, gpio_STEP, gpio_SLP, gpio_DIR;
+		unsigned int 	uSecDelay;
+		bool 			clockwise;
+		int 			delayFactor;  // keep constant rpm even with microstepping
 
 	protected:
-		STEP_MODE stepMode;
-		float speed;
-		int   stepsPerRevolution;
-		bool  asleep;
+		STEP_MODE 	stepMode;
+		float 		speed;
+		int   		stepsPerRevolution;
+		bool  		asleep;
 
 	public:
 		EasyDriver(int gpio_MS1, int gpio_MS2, int gpio_STEP, int gpio_SLP, int gpio_DIR,

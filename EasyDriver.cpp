@@ -4,6 +4,8 @@
  * Copyright Derek Molloy, School of Electronic Engineering, Dublin City University
  * www.eeng.dcu.ie/~molloyd/
  *
+ * YouTube Channel: http://www.youtube.com/derekmolloydcu/
+ *
  * Redistribution and use in source and binary forms, with or without modification,
  * are permitted provided that the following conditions are met:
  * 1. Redistributions of source code must retain the above copyright
@@ -92,7 +94,6 @@ void EasyDriver::setSpeed(float rpm) {
 }
 
 void EasyDriver::step(int numberOfSteps){
-
 	cout << "Doing "<< numberOfSteps << " steps and going to sleep for " << uSecDelay/delayFactor << "uS\n";
 	int sleepDelay = uSecDelay/delayFactor;
 	if(numberOfSteps>=0) {
@@ -104,7 +105,7 @@ void EasyDriver::step(int numberOfSteps){
 			usleep(sleepDelay);
 		}
 	}
-	else {
+	else { // going in reverse (numberOfSteps is negative)
 		if(clockwise) gpio_set_value(this->gpio_DIR, HIGH);
 		else gpio_set_value(this->gpio_DIR, LOW);
 		for(int i=numberOfSteps; i<=0; i++){
