@@ -1,7 +1,7 @@
 beaglebone
 ==========
 
-Derek Molloy DCU Repository of code used in the Beaglebone videos on my YouTube Channel youtube.com/DerekMolloyDCU/
+Derek Molloy DCU Repository of code used in the Beaglebone videos on my YouTube Channel http://youtube.com/DerekMolloyDCU/
 
 Copyright Derek Molloy, School of Electronic Engineering, Dublin City University
 
