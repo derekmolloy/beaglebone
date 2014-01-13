@@ -27,6 +27,7 @@
 
 #include "EasyDriver.h"
 #include <iostream>
+#include <unistd.h>
 using namespace std;
 
 EasyDriver::EasyDriver(int gpio_MS1, int gpio_MS2, int gpio_STEP, int gpio_SLP,

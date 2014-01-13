@@ -27,6 +27,7 @@
 
 #include <iostream>
 #include <string>
+#include <unistd.h>
 #include "SimpleGPIO.h"
 #include "BMA180Accelerometer.h"
 #include "EasyDriver.h"

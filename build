@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "Building the Test Application - derekmolloy.ie"
+g++ TestApplication.cpp EasyDriver.cpp SimpleGPIO.cpp BMA180Accelerometer.cpp -o TestApplication
